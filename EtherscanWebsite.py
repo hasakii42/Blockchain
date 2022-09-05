@@ -8,6 +8,7 @@ web3 = Web3(Web3.HTTPProvider(infu_url))
 
 
 '''*********************************'''
+
 # code to read get 10 blocks
 new = web3.eth.blockNumber
 print(new)

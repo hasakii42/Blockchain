@@ -1,16 +1,16 @@
 from web3 import Web3
 
 # tutorial to send transaction
-gan_url = "HTTP://127.0.0.1:7545" #use ganache or etheruem url
+gan_url = "HTTP://127.0.0.1:7545"  # use ganache or Ethereum url
 web3 = Web3(Web3.HTTPProvider(gan_url))
 
 print(web3.eth.blockNumber)
 
-acc_1 = "0xbC3826a8E6b33E9AD0E406302c11f758ABBE3206" #user1's account address
+acc_1 = "0xbC3826a8E6b33E9AD0E406302c11f758ABBE3206"  # user1's account address
 
-acc_2 = "0x886367E0498EF1Bef83354466d88a60A3061b13e" #user2 's account address
+acc_2 = "0x886367E0498EF1Bef83354466d88a60A3061b13e"  # user2 's account address
 
-pvt_key = "07090a50962f1d3d77d0a900e4a2cfd2f11ada15c44f4440a2778c696cd89c46" #user1's Private key
+pvt_key = "07090a50962f1d3d77d0a900e4a2cfd2f11ada15c44f4440a2778c696cd89c46"  # user1's Private key
 
 # get the nonce
 nonce = web3.eth.getTransactionCount(acc_1)

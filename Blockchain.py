@@ -61,6 +61,10 @@ t35 = "Jeet sends 3C to Vikas"
 t36 = "Hitesh sends 4C to Harsh"
 t37 = "Mani sends 10C to Naveen"
 t38 = "Harsh sends 7C to Mani****"
+t39 = "Mani sent 10C to Raj"
+t40 = "Raj got 10C from Mani"
+t41 = "Karan sent 40C to Pathak"
+t42 = "Pathak got 40C  from Karan"
 
 initial_block = CoinBlock("Initial String", [t1, t2])
 
@@ -135,3 +139,6 @@ eighteenth_block = CoinBlock(seventeenth_block.block_hash, [t37, t38])
 print("\n", eighteenth_block.block_data, "\n")
 print("\n", eighteenth_block.block_hash, "\n")
 
+ninthteenth_block = CoinBlock(eighteenth_block.block_hash, [t39, t40])
+print("\n", ninthteenth_block.block_data, "\n")
+print("\n", ninthteenth_block.block_hash, "\n")
